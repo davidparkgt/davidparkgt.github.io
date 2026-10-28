@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Park | Electrical Engineering ePortfolio</title>
+<meta name="description" content="Electrical engineering student at Georgia Tech focused on digital system design and hardware-software integration. Seeking a May 2027 internship.">
+<style>
+:root{
+  --bg:#f6f7fa; --card:#ffffff; --ink:#14213d; --muted:#4a5568; --line:#dde2ea;
+  --navy:#0b1f3a; --gold:#b3a369; --accent:#1f5fbf; --soft:#eaf0fa;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0d1420; --card:#151e2e; --ink:#eef2f8; --muted:#aab4c4; --line:#27334a; --navy:#07101e; --soft:#1a2740; --accent:#7fb0ff; --gold:#d6c78a;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--accent)}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+h2{font-size:1.9rem;border-left:5px solid var(--gold);padding-left:.6rem}
+h3{font-size:1.25rem}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+nav{position:sticky;top:0;z-index:10;background:var(--navy);box-shadow:0 2px 8px #0003}
+nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;padding-top:10px;padding-bottom:10px}
+nav b{color:#fff;margin-right:auto;font-size:1.05rem}
+nav a{color:#d9e2f1;text-decoration:none;font-size:.95rem;padding:4px 2px}
+nav a:hover,nav a:focus{color:var(--gold);outline:none;text-decoration:underline}
+.hero{background:linear-gradient(135deg,var(--navy),#17376a);color:#fff;padding:70px 0}
+.hero .wrap{display:grid;grid-template-columns:1fr 240px;gap:36px;align-items:center}
+.hero h1{font-size:2.8rem}
+.hero p{font-size:1.15rem;max-width:34em}
+.tag{color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;font-weight:600}
+.btn{display:inline-block;background:var(--gold);color:#0b1f3a;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;margin:6px 10px 0 0}
+.btn.alt{background:transparent;color:#fff;border:1px solid #fff8}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+figure{margin:0}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+svg{max-width:100%;height:auto;display:block}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.meta{color:var(--muted);font-size:.95rem}
+ul{padding-left:1.2em}
+.timeline{list-style:none;padding:0;margin:0;border-left:3px solid var(--gold)}
+.timeline li{margin:0 0 18px 0;padding-left:18px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-10px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid var(--card)}
+.pill{display:inline-block;background:var(--soft);border-radius:99px;padding:3px 12px;margin:3px 4px 3px 0;font-size:.9rem}
+.todo{background:#fff3b0;color:#4a3b00;padding:1px 5px;border-radius:3px;font-weight:600}
+.photo-slot{border:2px dashed var(--gold);border-radius:10px;padding:30px;text-align:center;color:var(--muted);background:var(--card)}
+.bar{background:var(--soft);border-radius:99px;height:12px;overflow:hidden;margin:4px 0 12px}
+.bar i{display:block;height:100%;background:var(--accent)}
+footer{background:var(--navy);color:#cbd5e5;text-align:center;padding:28px 20px;font-size:.9rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;color:#000;padding:8px;z-index:20}
+@media(max-width:760px){
+  .hero .wrap{grid-template-columns:1fr}.hero h1{font-size:2.1rem}
+  .g2,.g3{grid-template-columns:1fr}
+  nav b{width:100%}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<nav aria-label="Main">
+  <div class="wrap">
+    <b>David Park</b>
+    <a href="#home">Home</a><a href="#about">About</a><a href="#resume">Resume</a><a href="#goals">Career Goals</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#interests">Interests</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <div class="tag">Georgia Tech &middot; Electrical Engineering</div>
+      <h1>Hi, I'm David Park.</h1>
+      <p>I'm an electrical engineering student at the Georgia Institute of Technology who is drawn to digital system design and to the point where hardware and software meet. I'm looking for an internship starting May 2027, and this site collects my story, my coursework, my projects, and where I'm headed.</p>
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn alt" href="David_Park_Resume.pdf" download>Download resume</a>
+    </div>
+    <figure>
+      <!-- Replace this SVG with your own headshot: <img src="images/headshot.jpg" alt="David Park"> -->
+      <svg viewBox="0 0 240 240" role="img" aria-label="Monogram DP on a circuit-board pattern">
+        <defs><clipPath id="c"><circle cx="120" cy="120" r="116"/></clipPath></defs>
+        <circle cx="120" cy="120" r="116" fill="#0f2c55" stroke="#b3a369" stroke-width="4"/>
+        <g clip-path="url(#c)" stroke="#2e5a99" stroke-width="2" fill="none">
+          <path d="M0 50h70l20 20h60M0 190h60l25-25h90M240 80h-60l-20 20M240 150h-50l-20-20M120 0v60M120 240v50"/>
+          <circle cx="70" cy="50" r="4" fill="#2e5a99"/><circle cx="150" cy="70" r="4" fill="#2e5a99"/><circle cx="60" cy="190" r="4" fill="#2e5a99"/><circle cx="175" cy="165" r="4" fill="#2e5a99"/>
+        </g>
+        <text x="120" y="142" text-anchor="middle" font-family="Georgia,serif" font-size="78" fill="#fff" font-weight="700">DP</text>
+      </svg>
+    </figure>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap">
+    <h2>About Me</h2>
+    <div class="grid g2" style="align-items:start">
+      <div>
+        <p>I'm David Park, a Korean American engineering student who grew up speaking both Korean and English, and I carry that bilingual, bicultural background into the way I work with people. I began my engineering degree at the University of Georgia in 2024, where I earned a 3.8 GPA, and in August 2025 I transferred to Georgia Tech to pursue a Bachelor of Science in Electrical Engineering. I wanted to be in a place where the work is hard, the people are driven, and the focus on hardware is serious.</p>
+        <p>What interests me most is how a design on paper becomes something that actually runs. In Digital System Design I learned how combinational and sequential logic, finite state machines, and hardware description languages turn a set of rules into a working circuit. In Intro to Signal Processing I learned how sampling, filtering, and Fourier analysis let us pull meaning out of noisy signals. Both courses reward the same habit: break a messy problem into clean pieces, then check that the pieces fit back together.</p>
+        <p>I built that habit in places outside the classroom too. As a member of the Georgia Tech Esports varsity League of Legends team, I was the top-ranked candidate in the 2025 tryouts, and I help design team compositions, study patch changes, and review gameplay so we can adapt in real time. Before college, I ran the front of house at Danmooji Restaurant, a busy kitchen and dining room where I served 30+ guests at once and learned to stay calm and communicate clearly when everything happens at the same moment.</p>
+        <p>Put together, my story is about pressure, systems, and people. I like environments where decisions are fast, data matters, and a team has to trust each other. I am looking for an internship where I can apply my digital design and programming skills, learn from experienced engineers, and contribute to something real.</p>
+      </div>
+      <figure class="fig">
+        <svg viewBox="0 0 400 300" role="img" aria-label="Timeline graphic of David's path from UGA to Georgia Tech to a May 2027 internship">
+          <rect width="400" height="300" fill="none"/>
+          <line x1="40" y1="150" x2="360" y2="150" stroke="#b3a369" stroke-width="4"/>
+          <g font-family="system-ui,sans-serif" font-size="13" fill="currentColor">
+            <circle cx="60" cy="150" r="11" fill="#1f5fbf"/><text x="60" y="118" text-anchor="middle" font-weight="700">2024</text><text x="60" y="186" text-anchor="middle">UGA</text><text x="60" y="203" text-anchor="middle">Engineering</text>
+            <circle cx="170" cy="150" r="11" fill="#1f5fbf"/><text x="170" y="118" text-anchor="middle" font-weight="700">2025</text><text x="170" y="186" text-anchor="middle">Georgia Tech</text><text x="170" y="203" text-anchor="middle">Electrical Eng.</text>
+            <circle cx="280" cy="150" r="11" fill="#1f5fbf"/><text x="280" y="118" text-anchor="middle" font-weight="700">May 2027</text><text x="280" y="186" text-anchor="middle">Internship</text><text x="280" y="203" text-anchor="middle">goal</text>
+            <circle cx="350" cy="150" r="11" fill="#b3a369"/><text x="350" y="118" text-anchor="middle" font-weight="700">Next</text><text x="350" y="186" text-anchor="middle">Career</text>
+          </g>
+        </svg>
+        <figcaption>Figure 1. My path so far and what comes next.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="resume" style="background:var(--soft)">
+  <div class="wrap">
+    <h2>Resume</h2>
+    <p>My one-page resume covers my education, skills, leadership, and coursework. View it below or download a copy to share.</p>
+    <p><a class="btn" style="background:var(--navy);color:#fff" href="David_Park_Resume.pdf" target="_blank" rel="noopener">View PDF</a>
+       <a class="btn" style="background:var(--navy);color:#fff" href="David_Park_Resume.pdf" download>Download PDF</a>
+       <a class="btn" style="background:var(--navy);color:#fff" href="David_Park_Resume.docx" download>Download Word</a></p>
+    <object data="David_Park_Resume.pdf" type="application/pdf" width="100%" height="720" aria-label="David Park resume PDF">
+      <p>Your browser can't display the PDF here. <a href="David_Park_Resume.pdf">Open the resume PDF</a>.</p>
+    </object>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="wrap">
+    <h2>Career Goals</h2>
+    <p>My long-term goal is to become an engineer who designs digital systems and connects the hardware to the software that controls it. I am interested in roles such as digital design, embedded systems, and hardware-software integration, where I can work on products that people depend on. Over time I also want to grow into a technical leader who can guide a team through fast decisions, which is a skill I already practice in competitive esports.</p>
+    <p>Here is my plan for getting from where I am now to where I want to be.</p>
+    <div class="grid g2" style="align-items:start">
+      <ol class="timeline">
+        <li><h3>Now &ndash; Spring 2027: Build the foundation</h3>Finish my core ECE courses with strong grades, deepen my Python, MATLAB, and Java skills, and keep my GPA competitive. Attend the ECE Career Fair with a sharp resume and a clear elevator pitch.</li>
+        <li><h3>May 2027: First internship</h3>Land an internship in digital design, embedded systems, or a related area. My goal is to test my classroom knowledge on real projects and learn how engineering teams work day to day.</li>
+        <li><h3>Junior and senior years: Specialize</h3>Take advanced courses in digital design, signal processing, and embedded systems, and add a project or research experience that shows I can build something end to end.</li>
+        <li><h3>After graduation: Launch</h3>Begin a full-time role as a hardware or hardware-software engineer, and consider a graduate degree if it helps me reach more specialized work.</li>
+      </ol>
+      <figure class="fig">
+        <svg viewBox="0 0 400 300" role="img" aria-label="Staircase graphic showing four stages of my career plan">
+          <g font-family="system-ui,sans-serif" font-size="13" fill="currentColor">
+            <rect x="20" y="220" width="85" height="60" fill="#1f5fbf"/><rect x="110" y="170" width="85" height="110" fill="#2f73d6"/><rect x="200" y="120" width="85" height="160" fill="#4a89e6"/><rect x="290" y="70" width="90" height="210" fill="#b3a369"/>
+            <text x="62" y="205" text-anchor="middle">Foundation</text><text x="152" y="155" text-anchor="middle">Internship</text><text x="242" y="105" text-anchor="middle">Specialize</text><text x="335" y="55" text-anchor="middle">Launch</text>
+          </g>
+        </svg>
+        <figcaption>Figure 2. My four-stage plan, from foundation to full-time engineer.</figcaption>
+      </figure>
+    </div>
+    <h3 style="margin-top:28px">Gaps I'm working on</h3>
+    <p>I have strong coursework and teamwork experience, but I need more hands-on engineering projects and time in industry. To close that gap I plan to start a hardware or programming project each semester, share it on this site, and use GT KSEA's industry seminars and mentors to learn what employers look for.</p>
+  </div>
+</section>
+
+<section id="projects" style="background:var(--soft)">
+  <div class="wrap">
+    <h2>Technical Projects</h2>
+    <p>This section grows with me. Each project gets a card below and a short write-up. My Individual Discovery Project is featured first.</p>
+
+    <article class="card" id="discovery">
+      <div class="tag" style="color:var(--accent)">Discovery Project Feature</div>
+      <h3><span class="todo">[Project title]</span></h3>
+      <p class="meta"><span class="todo">[Course/semester]</span> &middot; <span class="todo">[Tools or skills used]</span></p>
+
+      <h3>The Problem</h3>
+      <p><span class="todo">[Write 120+ words.]</span> Describe the question or challenge you chose and why it mattered to you. Who was affected? What did you expect to find or build at the start? Explain what first made you curious, and how this project connects to digital design, signal processing, or hardware-software integration, the areas I care about most as an electrical engineering student.</p>
+
+      <h3>The Process</h3>
+      <p><span class="todo">[Write 150+ words.]</span> Walk through what you actually did, step by step. What research did you do? What did you build, code, test, or measure? Which tools did you use (for example Python, MATLAB, or a circuit simulator)? Include one or two moments that did not go as planned and explain how you adjusted. This is where your problem-solving shows.</p>
+
+      <h3>The Outcome</h3>
+      <p><span class="todo">[Write 130+ words.]</span> Share your results with specific numbers, observations, or a demo if you have one. What did you learn about the topic and about yourself? What would you do differently, and how will this project shape your next steps toward your May 2027 internship goal?</p>
+
+      <div class="grid g2" style="margin-top:18px">
+        <div class="photo-slot">
+          <strong>Add your own photo or video here</strong><br>
+          The assignment requires at least one photo or video that you took or created.<br>
+          Replace this box with: <code>&lt;img src="images/discovery-project.jpg" alt="Describe what the photo shows"&gt;</code>
+        </div>
+        <figure class="fig">
+          <svg viewBox="0 0 400 220" role="img" aria-label="Diagram of the design thinking process from empathize to test">
+            <g font-family="system-ui,sans-serif" font-size="12" fill="#fff" text-anchor="middle">
+              <rect x="5" y="80" width="70" height="50" rx="8" fill="#1f5fbf"/><text x="40" y="110">Empathize</text>
+              <rect x="85" y="80" width="70" height="50" rx="8" fill="#2a6ccd"/><text x="120" y="110">Define</text>
+              <rect x="165" y="80" width="70" height="50" rx="8" fill="#3a7bdb"/><text x="200" y="110">Ideate</text>
+              <rect x="245" y="80" width="70" height="50" rx="8" fill="#4a89e6"/><text x="280" y="110">Prototype</text>
+              <rect x="325" y="80" width="70" height="50" rx="8" fill="#b3a369"/><text x="360" y="110" fill="#0b1f3a">Test</text>
+            </g>
+            <path d="M360 135v40H40v-40" stroke="currentColor" fill="none" stroke-dasharray="5 4"/>
+            <text x="200" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="currentColor">Iterate and improve</text>
+          </svg>
+          <figcaption>Figure 3. The design thinking structure I used to organize this write-up.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <h3 style="margin-top:34px">Coursework Highlights</h3>
+    <div class="grid g2">
+      <figure class="fig">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Finite state machine diagram with three states">
+          <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+          <g fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="70" cy="110" r="38"/><circle cx="200" cy="110" r="38"/><circle cx="330" cy="110" r="38"/>
+            <path d="M108 100h54" marker-end="url(#a)"/><path d="M238 100h54" marker-end="url(#a)"/>
+            <path d="M310 146C260 200 140 200 90 146" marker-end="url(#a)"/>
+          </g>
+          <g font-family="system-ui,sans-serif" font-size="14" fill="currentColor" text-anchor="middle">
+            <text x="70" y="115">S0</text><text x="200" y="115">S1</text><text x="330" y="115">S2</text>
+            <text x="135" y="90" font-size="11">in=1</text><text x="265" y="90" font-size="11">in=1</text><text x="200" y="205" font-size="11">reset</text>
+          </g>
+        </svg>
+        <figcaption>Figure 4. A finite state machine, one of the core ideas from Digital System Design (ECE 2020).</figcaption>
+      </figure>
+      <figure class="fig">
+        <svg viewBox="0 0 400 220" role="img" aria-label="A noisy signal and a smoothed signal after filtering">
+          <g fill="none" stroke-width="2">
+            <path stroke="#9aa9c2" d="M10 70 l10 -12 l10 18 l10 -20 l10 22 l10 -16 l10 20 l10 -22 l10 16 l10 -18 l10 22 l10 -16 l10 14 l10 -20 l10 24 l10 -16 l10 14 l10 -20 l10 18 l10 -12 l10 16 l10 -14 l10 8 l10 -4"/>
+            <path stroke="#1f5fbf" d="M10 165 C60 110 100 220 150 165 S250 110 300 165 S360 200 390 165"/>
+          </g>
+          <g font-family="system-ui,sans-serif" font-size="12" fill="currentColor"><text x="10" y="20">Noisy input</text><text x="10" y="125">After low-pass filter</text></g>
+        </svg>
+        <figcaption>Figure 5. Filtering pulls a clean signal out of noise, a theme from Intro to Signal Processing (ECE 2026).</figcaption>
+      </figure>
+    </div>
+
+    <h3 style="margin-top:34px">Upcoming Projects</h3>
+    <div class="grid g3">
+      <div class="card"><h3>Project slot 2</h3><p class="meta">Coming soon. A digital design project built from my ECE coursework.</p></div>
+      <div class="card"><h3>Project slot 3</h3><p class="meta">Coming soon. A signal processing or MATLAB analysis.</p></div>
+      <div class="card"><h3>Project slot 4</h3><p class="meta">Coming soon. A hardware-software integration build.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience &amp; Leadership</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>GT Esports &ndash; Varsity League of Legends Team</h3>
+        <div class="meta">August 2025 &ndash; Present</div>
+        <ul>
+          <li>Selected as the #1 candidate in the 2025 tryouts, competing against the full Georgia Tech student body candidate pool.</li>
+          <li>Designed and optimized team compositions and matchup strategies for Collegiate League of Legends (CLOL) competition, helping the team qualify for the Top 16 playoffs out of 32 teams.</li>
+          <li>Helped develop and execute macro-level strategic plans and adapted tactics in real time under pressure, while tracking patch updates and meta shifts, analyzing gameplay, and producing performance reports.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>GT KSEA (Korean American Scientists and Engineers Association)</h3>
+        <div class="meta">August 2025 &ndash; Present</div>
+        <ul>
+          <li>Engage with a network of 50+ peers to exchange ideas, coordinate group initiatives, and build professional relationships.</li>
+          <li>Participate in industry-led seminars with professional mentors to gain career guidance and a broader view of the engineering industry.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Danmooji Restaurant &ndash; Front of House</h3>
+        <div class="meta">December 2023 &ndash; August 2024</div>
+        <ul>
+          <li>Independently managed front-of-house operations in a high-volume setting, serving 30+ concurrent guests with efficiency and composure.</li>
+          <li>Worked with management to improve peak-hour workflows, increasing service throughput while keeping order accuracy high.</li>
+          <li>Strengthened problem-solving and communication skills by resolving logistical challenges in real time.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:var(--soft)">
+  <div class="wrap">
+    <h2>Education, Coursework &amp; Skills</h2>
+    <div class="grid g2" style="align-items:start">
+      <div>
+        <h3>Education</h3>
+        <p><strong>Georgia Institute of Technology</strong>, Atlanta, GA<br>B.S. in Electrical Engineering &middot; August 2025 &ndash; Present &middot; GPA 3.5</p>
+        <p><strong>University of Georgia</strong>, Athens, GA<br>B.S. in Engineering &middot; August 2024 &ndash; May 2025 &middot; GPA 3.8</p>
+        <h3>Relevant coursework</h3>
+        <ul>
+          <li><strong>Digital System Design (ECE 2020):</strong> combinational and sequential logic, finite state machines, hardware description languages</li>
+          <li><strong>Intro to Signal Processing (ECE 2026):</strong> continuous and discrete-time signals, filtering, Fourier analysis, sampling</li>
+          <li>Linear Algebra</li>
+          <li>Differential Equations</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <p class="meta" style="margin:0">Self-rated for this site. Adjust to match your honest comfort level.</p>
+        <div style="margin-top:10px">Python<div class="bar"><i style="width:80%"></i></div>
+        MATLAB<div class="bar"><i style="width:70%"></i></div>
+        Java<div class="bar"><i style="width:65%"></i></div>
+        AutoCAD<div class="bar"><i style="width:55%"></i></div>
+        Revit<div class="bar"><i style="width:50%"></i></div></div>
+        <h3>Languages</h3>
+        <span class="pill">Korean (native)</span><span class="pill">English (native)</span>
+        <h3 style="margin-top:14px">Strengths</h3>
+        <span class="pill">Strategic thinking</span><span class="pill">Performing under pressure</span><span class="pill">Data and gameplay analysis</span><span class="pill">Team communication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="interests">
+  <div class="wrap">
+    <h2>Interests &amp; Hobbies</h2>
+    <p>Competitive gaming is my biggest hobby, and it shapes how I think. League of Legends rewards preparation, quick reads of a changing situation, and honest review afterward, and I bring those habits to engineering problems. I also enjoy staying connected to my Korean heritage through language and community, which is part of why KSEA matters to me. Outside of those, I like learning how everyday technology works and thinking about how it could be built better.</p>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--soft)">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I'm actively looking for a May 2027 internship and always happy to talk with engineers, recruiters, and fellow students.</p>
+    <p><strong>Email:</strong> <a href="mailto:dpdavid6276@gmail.com">dpdavid6276@gmail.com</a><br>
+    <strong>Location:</strong> Atlanta, GA</p>
+    <!-- Add your LinkedIn link here once your profile is ready: <p><a href="https://www.linkedin.com/in/YOUR-NAME">LinkedIn</a></p> -->
+  </div>
+</section>
+</main>
+
+<footer>&copy; 2026 David Park &middot; Georgia Institute of Technology &middot; Electrical Engineering ePortfolio</footer>
+</body>
+</html>
